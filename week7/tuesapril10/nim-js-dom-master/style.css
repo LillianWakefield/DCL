@@ -1,0 +1,87 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Arial,Helvetica Neue,Helvetica,sans-serif; 
+  background-color: #3F88C5;
+}
+
+h1 {
+  margin: 0;
+}
+
+.top-bar {
+  background-color: #354F52;
+  text-align: center;
+  color: white;
+  padding: 10px
+}
+
+.play-field {
+  width: 100%;
+  height: 100vh;
+}
+
+.left, .right {
+  width: 50%;
+  height: 100%;
+  float: left;
+  text-align: center;
+  color: white;
+}
+
+.left {
+  background-color: #FFBA08;
+}
+
+.right {
+  background-color: transparent; 
+}
+
+#player-one-name, #player-two-name {
+  padding-top: 200px;
+  padding-bottom: 20px;
+  font-size: 40px;
+}
+
+.chip {
+  display: inline-block;
+  background-color: white;
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  margin: 3px;
+  margin-left:24px;
+}
+
+#chips {
+  float: left;
+  width: 40px;
+  margin-left: -40px;
+  height: 100vh;
+  z-index: 100;
+  padding-top: 20px;
+}
+
+
+
+#player-one-chips > .chip, #player-two-chips > .chip {
+  margin-left: 0;
+}
+
+#player-one-chips, #player-two-chips {
+  height: 100px;
+}
+
+.take, .pass {
+  display: inline-block;
+  font-size: 25px;
+  margin: 20px;
+  cursor: pointer;
+  transition: font-size 0.3s, color 0.3s;
+   user-select: none;
+}
+
+.take:hover, .pass:hover {
+  color: #F42B03;
+  font-size: 30px;
+}
