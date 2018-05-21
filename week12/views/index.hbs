@@ -1,0 +1,13 @@
+<h1>{{title}}</h1>
+<p>My name is {{myName}}</p>
+
+<ul>
+    {{#each cats}}
+    <li>{{this}}</li>
+    {{/each}}
+</ul>
+{{#each posts}}
+<p>
+  <a href="/{{id}}"> {{title}}</a> 
+</p>
+{{/each}}
