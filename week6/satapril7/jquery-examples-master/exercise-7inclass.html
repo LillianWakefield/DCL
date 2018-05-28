@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <style>
+    .strike {text-decoration: line-through; 
+    }
+    </style>
+    <script>
+    /*
+    hint: use .on not .click
+    from https://api.jquery.com/on/:
+    An event-delegation approach attaches an event handler to only one element, the tbody, and the event only needs to bubble up one level (from the clicked tr to tbody):
+
+$( "#dataTable tbody" ).on( "click", "tr", function() {
+  console.log( $( this ).text() );
+});
+    Make a Todo List
+
+    hecho! 0. Make it so that after entering the task description, in the text field and clicking the "Add Task" button, a new task appears inside the element with the id todo-list.
+   hecho! 1. the ability to remove tasks (add an x button)
+   hecho! 2. the ability to check off tasks - strikes them out wo removing (add a checkbox)
+    hecho!? 3. the ability to delete a task
+    4. the ability to edit an existing task
+
+    */
+    $(function(){
+        //**** STATE****//
+    var input = '';
+    var todoList = [
+        {
+            id : 0,
+            description: 'default todo',
+            isCompleted: false,
+        },
+        {
+            id : 1,
+            description: 'default todo #2',
+            isCompleted: true,
+        }
+    ];
+    var currentTodo = 2;
+    //****ACTION***//
+    var addTodo = function(newDescription){
+        todoList.push({
+            id: currentTodo++,
+            description: newDescription,
+            isCompleted: false,
+        })
+    }
+    var deleteTodo = function(idToDelete){
+        todoList = todoList.filter(function(currentTodo){
+            return currentTodo.id != idToDelete;
+        });
+
+    }
+
+    var completeTodo = function (idToComplete){
+        todoList.forEach(function(currentTodo){
+            if (currentTodo.id == idToComplete) {
+                currentTodo.isCompleted = true;
+            }
+        });
+
+    }
+    var renderTodoList = function() {
+        $('ul').empty();
+        todoList.forEach(function(currentTodo){
+            $('ul').append('<li data-id="+currentTodo.id+">'+currentTodo.description+'<button class="delete">X</button><input type = "checkbox"></li>');
+        })
+    }
+    renderTodoList();
+});
+
+        $(function () {
+       $('#add-button').click(function(){
+        $('#todo-list').append('<li contenteditable = "true"><input type="checkbox">'+$('#description').val()+'<button class="delete">X</button>');
+       }); 
+
+       $('#remove-button').click(function(){
+        $('#todo-list li:last-child').remove();
+       }); 
+
+      $('input type="checkbox">').on( "click", "li", function() {
+        $(this).toggleClass('strike');
+        //***KICK IT ALL OFF***//
+        $('ul').on('click', '.delete', function(){
+            var todoID = $(this).data('id');
+            delete Todo(todoId);
+            renderTodoList();
+        });
+    });
+        
+/*$('ul').on('click',function () {
+  $(this).val();
+});*/
+$('ul').on("click", ".delete", function(){
+    $(this).parent().remove();
+});
+/*$( "ul" ).on( "click", "li", function() {
+        $(this).text($(this).val());
+});
+*/
+
+      });
+
+    </script>
+    <style>
+    #wrapper {
+      max-width: 480px;
+      margin: auto;
+    }
+
+    #description, #search, #todo-list {
+      font-size: 1.5em;
+    }
+    </style>
+  </head>
+  <body>
+    <div id="wrapper">
+      <input id="description" type="text" name="description">
+      <button id="add-button">Add Task</button>
+      <button id="remove-button">Remove Task</button>
+      <ul style="list-style: none;" id="todo-list">
+        <li contenteditable = "true"><input type='checkbox'>Feed the cat<button class='delete'>X</button></li>
+      </ul>
+    </div>
+  </body>
+</html>
