@@ -1,0 +1,61 @@
+body {
+	background-color: #333;
+	color: #E9E9E9;
+}
+
+.logo {
+	font-size: 19px;
+	font-weight: 100;
+	margin-top: 80px
+}
+.logo img {
+	width: 40px;
+	position: relative;
+	top: -3px;
+}
+
+hr {
+	border-color: #E9E9E9;
+}
+.content {
+	font-weight: 100;
+}
+
+.list-group-item-action {
+	width: 10%;
+	float: left
+}
+
+a, a:hover {
+	color: #86898b;
+}
+.content {
+	margin: 30px 0px;
+}
+.exercise-content {
+	margin: 30px 0px;
+}
+
+.exercise {
+	border: 1px solid #999;
+    border-radius: 5px;
+    margin: 15px 0px;
+    padding: 15px;
+}
+
+.exercise .title {
+	font-size: 22px;
+}
+
+.exercise .subtitle {
+	color: #999;
+}
+
+.exercise .result {
+	display: none;
+	margin-right: 25px;
+}
+
+button {
+	cursor: pointer;
+}
