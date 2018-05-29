@@ -1,0 +1,68 @@
+
+.flex-container {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	align-items:flex-start;
+	background: #102542
+	
+}
+.cute-container {
+	padding-top: 20px;
+}
+.collapse {
+	padding-left: 40px;
+}
+.navbar {
+	color: black;
+}
+
+.card-options {
+	width: 400px;
+	padding-top: 15px;
+	margin: auto;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	background: #B3A394
+}
+
+.navbar-brand {
+	padding-left: 40px;
+}
+.cute-card  {
+    width: 18rem;
+    text-align: center;  
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	cursor: pointer;
+	background: #B3A394;
+	margin: 40px;
+}
+
+
+.footer {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background-color: #CDD7D6;
+	text-align: center;
+	padding-top: 10px;
+
+}
+.start {
+	float:all;
+	margin: 20px;
+	transform-style: preserve-3d;
+	transition: all 1.0s ease;
+	background: #B3A394;
+	text-align: center;
+}
+html {
+	background: #102542;
+}
+
+break{
+	flex-basis: 100%;
+	width: 0px; 
+	height: 0px; 
+	overflow: hidden;
+  }

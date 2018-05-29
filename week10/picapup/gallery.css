@@ -1,0 +1,76 @@
+h1 {
+    text-align: center;
+	margin: 20px;
+	color:#B3A394;
+}
+body {
+    background: #102542;
+}
+.navbar {
+	color: black;
+}
+
+.navbar-brand {
+	padding-left: 40px;
+}
+.collapse {
+	padding-left: 40px;
+}
+.photo-container {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	align-items:flex-start;
+	
+
+}
+
+.footer {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background-color: #CDD7D6;
+	text-align: center;
+	padding-top: 10px;
+
+}
+.card {
+	background-color: #B3A394;
+	margin:20px;
+	text-align: center;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	
+}
+.start {
+	float:all;
+	margin:20px;
+	transform-style: preserve-3d;
+	transition: all 1.0s ease;
+	background: #B3A394;
+}
+.flex-container {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	align-items:flex-start;
+	background: #102542
+}
+.align-right {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.no-longer {
+	display:flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.example {
+	margin-left: 10px;
+	background-color: #333A40 !important;
+}
+.delete {
+	cursor: pointer;
+}

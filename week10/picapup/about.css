@@ -1,0 +1,80 @@
+html {
+	background: #102542;
+}
+
+.collapse {
+	padding-left: 40px;
+}
+.navbar {
+	color: black;
+}
+.navbar-brand {
+	padding-left: 40px;
+}
+
+.footer {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background-color: #CDD7D6;
+	text-align: center;
+	padding-top: 10px;
+
+}
+
+.container-fluid {
+  	display: inline-flex;
+  	flex-direction: row;
+ 	background: #102542;
+ 	padding-top: 40px;
+
+}
+
+.card {
+	text-align: center;
+	float:all;
+	margin:  auto;
+	transform-style: preserve-3d;
+	transition: all 1.0s ease;
+	background-color: #B3A394;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);	
+}
+
+.card-body a {
+	color:#102542;
+	font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
