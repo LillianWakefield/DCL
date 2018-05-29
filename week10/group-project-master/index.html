@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<head>
+        <title>Cute or Boot?</title>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" ></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="./index.css" >
+        <script src="index.js"></script>
+</head>
+<body>
+        <div class="header">
+                <h1> Cute or Boot?</h1>
+                <div class="navbar sticky-top navbar-light">
+                        <ul class="nav justify-content-end">
+                                <li class="nav-item">
+                                        <a class="nav-link" href="index.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                        <a class="nav-link" href="gallery.html">Gallery</a>
+                                </li>
+                                <li class="nav-item">
+                                        <a class="nav-link" href="aboutSection/about.html">About</a>
+                                </li>
+                        </ul>
+                </div>
+        </div>
+        
+        <div class="container">
+                <div class="row">
+                        <div class="checkBoxes flex-container col-12">
+                                <div class="row">
+                                        <div class="form-check col-6">
+                                                <!-- I changed the buttons to radio so the user can only select one-->
+                                                <label><input type="radio" name="optradio" id="cats-check">Only Cats</label>
+                                                <br />
+                                                <label><input type="radio" name="optradio" id="dogs-check">Only Dogs</label>
+                                                <br />
+                                                <label><input type="radio" name="optradio" id="both-check" checked>Both</label>
+                                        </div>
+                                        <div class="startUp col-6">
+                                                <button type="submit" class="btn btn-primary startButton">Bring on the cute!</button>
+                                        </div>   
+                                </div>
+                        </div>
+                </div>
+                <!-- I edited this a bit so the images would display properly-->
+                <div class="flex-container">
+                         <div class="card cute-card" >
+                                <image id='card-left' class='card-img-top'></image>
+                                <div class="card-body">
+                                        <h5 class="card-title">Like this one?</h5>
+                                        <button type="submit" class="btn btn-primary cute-pick">Click here!</button>
+                                </div>
+                        </div>
+                        <div class="card cute-card">
+                                <image id='card-right' class='card-img-top'></image>
+                                <div class="card-body">
+                                        <h5 class="card-title">Or maybe this one?</h5>
+                                        <button type="submit" class="btn btn-primary cute-pick">Click here!</button>
+                                </div>
+                         </div>   
+                </div>       
+        </div>
+        <div class="bottom">
+
+        </div>
+</body>

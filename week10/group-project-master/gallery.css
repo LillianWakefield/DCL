@@ -1,0 +1,13 @@
+h1 {
+    text-align: center;
+    color: #7C7C7D;
+    margin: 50px;
+}
+body {
+    background-color: #DAA49A;
+}
+.photo-container {
+display: flex;
+justify-content: space-around;
+flex-wrap: wrap;
+}

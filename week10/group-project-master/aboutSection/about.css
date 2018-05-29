@@ -1,0 +1,95 @@
+html {
+	background: gray;
+}
+
+.collapse {
+	padding-left: 40px;
+}
+.navbar {
+	color: blue;
+}
+
+.navbar-brand {
+	padding-left: 40px;
+}
+
+.footer {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background-color: #cecece;
+	text-align: center;
+	padding-top: 10px;
+
+}
+
+.container-fluid {
+	height: 100%;
+  	display: inline-flex;
+  	flex-direction: row;
+ 	justify-content: center;
+ 	background: gray;
+ 	padding-top: 100px;
+
+}
+
+.card {
+	transform-style: preserve-3d;
+	transition: all 1.0s ease;
+
+	
+}
+
+.card:hover {
+	transform:rotateY(180deg);
+	transition: all 1.0s ease;
+}
+
+.cardfront {
+	text-align: center;
+	backface-visibility: hidden;
+	height: 100%;
+
+}
+
+.cardback {
+	height: 100%;
+	backface-visibility: hidden;
+	transform: rotateY(180deg);
+	text-align: center;
+
+}
+
+
+/* css below this line is experimental for the modals */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
