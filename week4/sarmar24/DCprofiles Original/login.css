@@ -1,0 +1,19 @@
+body {
+    background-color: #F8F9FA;
+}
+.flexible {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+}
+button {
+    margin-bottom: 10px;
+}
+form {
+    border: solid;
+    border-width: 1px;
+    border-color: #CDD4DB;
+    padding: 10px;
+    background-color: white;
+}

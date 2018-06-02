@@ -1,0 +1,32 @@
+body {
+    color: #F8F9FA;
+}
+
+.jumbotron { 
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)), url("images/digitalcrafts-2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+.flexible {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-between;
+}
+.flexible h1 {
+    font-size: 75px;
+}
+.flexible h5 {
+    text-align: left;
+}
+.btn { background-color: #F8F9FA;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.btn a {
+    color: #788481;
+  }
