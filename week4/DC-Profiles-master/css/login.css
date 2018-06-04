@@ -1,0 +1,67 @@
+body {
+	font-family: 'Raleway', sans-serif;
+}
+
+h1 {
+	text-align: center;
+	padding: 50px;
+	margin: 50px 0 50px 0;
+}
+
+.container {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+
+
+.login-form {
+	margin-right: 60px;
+}
+
+.login-form .btn {
+	margin-top: 20px;
+}
+
+
+
+
+.other-logins {
+	border-left: 1px solid black ;
+}
+
+
+
+.facebook .btn {
+	background-color: #3B539A;
+	color: #FFF;
+	margin: 30px 0px 20px 30px;
+}
+
+.facebook .btn:hover {
+	background-color: #6b82c7;
+	color: #FFF;
+	margin: 30px 0px 20px 30px;
+}
+
+.google .btn {
+	background-color: #4179F7;
+	margin: 30px 0px 20px 30px;
+	padding-right: 37px;
+	color: #FFF;
+}
+
+
+.google .btn:hover {
+	background-color: #85a8fa;
+	margin: 30px 0px 20px 30px;
+	padding-right: 37px;
+	color: #FFF;
+}
+
+
+
+footer {
+	margin-top: 100px;
+}

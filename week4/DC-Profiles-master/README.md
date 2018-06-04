@@ -1,0 +1,3 @@
+DC Connect
+
+This is a web portal that employers can log in to and view the profiles of DigitalCrafts students. They'll be able to search for specific students using a search bar, and reach out to individual students to initiate job interviews. In addition, the students themselves will be able to log in and update their profiles with bios, resumes, social media pages, and (most importantly) portfolio projects.
